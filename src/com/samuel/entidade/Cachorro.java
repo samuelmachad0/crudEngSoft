@@ -16,6 +16,20 @@ public class Cachorro {
     @ManyToMany(mappedBy="dogs")
     private List<Pessoa> persons;
 
+    @OneToMany(mappedBy = "cachorro")
+    private List<Brinquedo> brinquedos;
+    
+    public Cachorro(String name){
+    	this.name = name;
+    }
+	public List<Brinquedo> getBrinquedos() {
+		return brinquedos;
+	}
+
+	public void setBrinquedos(List<Brinquedo> brinquedos) {
+		this.brinquedos = brinquedos;
+	}
+
 	public int getId() {
 		return id;
 	}
