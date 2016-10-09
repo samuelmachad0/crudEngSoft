@@ -4,7 +4,7 @@ import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
-import javax.persistence.Embedded;
+
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -19,15 +19,14 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="cliente")
-@SequenceGenerator(name = "CUSTOMER_SEQUENCE", sequenceName = "CUSTOMER_SEQUENCE", allocationSize = 1, initialValue = 0)
+@Table(name="pessoa")
+@SequenceGenerator(name = "PESSOAS_SEQUENCE", sequenceName = "PESSOAS_SEQUENCE", allocationSize = 1, initialValue = 0)
 
-public class Cliente {
+public class Pessoa {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-   // @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "CUSTOMER_SEQUENCE")
-	private int clienteId;
+	private int pessoaId;
 	
 	@Column
 	private String name;
@@ -39,18 +38,18 @@ public class Cliente {
 	private Endereco endereco;
 	
 	 @ManyToMany
-	 @JoinTable(name = "person_dog", joinColumns = @JoinColumn(name = "person_id"), inverseJoinColumns = @JoinColumn(name = "dog_id"))
-	 private List<Dog> dogs;
+	 @JoinTable(name = "pessoa_cachorro", joinColumns = @JoinColumn(name = "pessoaId"), inverseJoinColumns = @JoinColumn(name = "cachorroId"))
+	 private List<Cachorro> dogs;
 
-	public Cliente(String name, int idade){
+	public Pessoa(String name, int idade){
 		this.name = name;
 		this.idade = idade;
 	}
-	public List<Dog> getDogs() {
+	public List<Cachorro> getDogs() {
 		return dogs;
 	}
 
-	public void setDogs(List<Dog> dogs) {
+	public void setDogs(List<Cachorro> dogs) {
 		this.dogs = dogs;
 	}
 
@@ -62,13 +61,6 @@ public class Cliente {
 		this.endereco = endereco;
 	}
 
-	public int getClienteId() {
-		return clienteId;
-	}
-
-	public void setClienteId(int clienteId) {
-		this.clienteId = clienteId;
-	}
 
 	public String getName() {
 		return name;
@@ -84,6 +76,12 @@ public class Cliente {
 
 	public void setIdade(int idade) {
 		this.idade = idade;
+	}
+	public int getPessoaId() {
+		return pessoaId;
+	}
+	public void setPessoaId(int pessoaId) {
+		this.pessoaId = pessoaId;
 	}
 
 

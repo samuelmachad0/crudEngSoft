@@ -5,7 +5,7 @@ import java.util.List;
 import javax.persistence.*;
  
 @Entity
-public class Dog {
+public class Cachorro {
  
     @Id
     @GeneratedValue
@@ -14,7 +14,7 @@ public class Dog {
     private String name;
  
     @ManyToMany(mappedBy="dogs")
-    private List<Cliente> persons;
+    private List<Pessoa> persons;
 
 	public int getId() {
 		return id;
@@ -32,11 +32,11 @@ public class Dog {
 		this.name = name;
 	}
 
-	public List<Cliente> getPersons() {
+	public List<Pessoa> getPersons() {
 		return persons;
 	}
 
-	public void setPersons(List<Cliente> persons) {
+	public void setPersons(List<Pessoa> persons) {
 		this.persons = persons;
 	}
  
