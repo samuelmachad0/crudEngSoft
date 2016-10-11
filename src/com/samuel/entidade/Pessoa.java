@@ -4,7 +4,6 @@ import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
-
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -40,7 +39,9 @@ public class Pessoa {
 	 @ManyToMany
 	 @JoinTable(name = "pessoa_cachorro", joinColumns = @JoinColumn(name = "pessoaId"), inverseJoinColumns = @JoinColumn(name = "cachorroId"))
 	 private List<Cachorro> dogs;
-
+	public Pessoa(){
+		
+	}
 	public Pessoa(String name, int idade){
 		this.name = name;
 		this.idade = idade;
@@ -56,8 +57,7 @@ public class Pessoa {
 	public Endereco getEndereco() {
 		return endereco;
 	}
-
-	public void setEndereco(Endereco endereco) {
+    public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
 

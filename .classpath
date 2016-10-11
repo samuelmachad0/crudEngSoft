@@ -2,7 +2,22 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Hibernate"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/MySQL"/>
+	<classpathentry kind="lib" path="C:/Users/Aluno/Documents/crudEngSoft/JARS/hibernate/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aluno/Documents/crudEngSoft/JARS/hibernate/c3p0-0.9.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aluno/Documents/crudEngSoft/JARS/hibernate/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aluno/Documents/crudEngSoft/JARS/hibernate/commons-collections-2.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aluno/Documents/crudEngSoft/JARS/hibernate/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aluno/Documents/crudEngSoft/JARS/hibernate/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aluno/Documents/crudEngSoft/JARS/hibernate/ejb3-persistence.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aluno/Documents/crudEngSoft/JARS/hibernate/hibernate3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aluno/Documents/crudEngSoft/JARS/hibernate/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aluno/Documents/crudEngSoft/JARS/hibernate/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aluno/Documents/crudEngSoft/JARS/hibernate/hibernate-entitymanager.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aluno/Documents/crudEngSoft/JARS/hibernate/hibernate-validator.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aluno/Documents/crudEngSoft/JARS/hibernate/javassist.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aluno/Documents/crudEngSoft/JARS/hibernate/jboss-archive-browsing.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aluno/Documents/crudEngSoft/JARS/hibernate/jta.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aluno/Documents/crudEngSoft/JARS/hibernate/log4j-1.2.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aluno/Documents/crudEngSoft/JARS/mysql-connector-java-5.1.5-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -54,5 +54,4 @@ public class Cachorro {
 		this.persons = persons;
 	}
  
-    // get and set
 }

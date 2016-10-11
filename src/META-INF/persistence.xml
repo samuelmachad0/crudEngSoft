@@ -16,7 +16,7 @@
 			<property name="hibernate.connection.user" value="testuserengsw" />
 			<!-- INSERIR A SENHA DA BASE DA DADOS -->
 			<!-- EM CASOS DE PROBLEMAS PARA CONECTAR, O IP DEVERÁ SER LIBERADO NA HOSPEDAGEM -->
-			<property name="hibernate.connection.password" value="XXXXXXXXXXXXXX" />
+			<property name="hibernate.connection.password" value="XXXXXXXXXX" />
 <!--             <property name="hibernate.hbm2ddl.auto" value="create" /> -->
             <property name="hibernate.hbm2ddl.auto" value="update"/>
  
@@ -36,16 +36,16 @@
             <!-- Conexão com o banco de dados -->
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
 			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
-			<property name="hibernate.connection.url" value="jdbc:mysql://127.0.0.1/exemplos" />
+			<property name="hibernate.connection.url" value="jdbc:mysql://127.0.0.1/exemplos3" />
 			<property name="hibernate.connection.user" value="root" />
-			<property name="hibernate.connection.password" value="" />
+			<property name="hibernate.connection.password" value="fatec" />
 <!--             <property name="hibernate.hbm2ddl.auto" value="create" /> -->
             <property name="hibernate.hbm2ddl.auto" value="update"/>
  
             <!--Configuracoes de Debug-->
-			<property name="hibernate.show_sql" value="true" />
-			<property name="hibernate.format_sql" value="true" />
-			<property name="use_sql_comments" value="true" />
+			<property name="hibernate.show_sql" value="false" />
+			<property name="hibernate.format_sql" value="false" />
+			<property name="use_sql_comments" value="false" />
 			
 		</properties>
     </persistence-unit>

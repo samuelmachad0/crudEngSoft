@@ -29,7 +29,9 @@ public class Endereco{
 	  
 	@Column
 	private String complemento;
-
+	public Endereco(){
+		
+	}
 	public Endereco(String cep,String cidade,String bairro,String estado,int numero,String complemento){
 		this.cep = cep;
 		this.cidade = cidade;
